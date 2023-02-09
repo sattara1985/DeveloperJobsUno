@@ -1,19 +1,23 @@
 ﻿using BusinessDos.Entities;
+using BusinessDos.Interfaces.Repositories;
 using BusinessDos.Interfaces.Services;
+using System;
 using System.Collections.Generic;
 
 namespace BusinessDos.Services
 {
     public class JobService : IJobService
     {
-        public new  List<Job> GetJobs()
+        private readonly IJobRepository _jobRepository;
+        public JobService (IJobRepository jobRepository) 
         {
-            return new List<Job> 
-            { 
-                new Job{IdJob = 1, JobTitle = "test job 1"},
-                new Job{IdJob = 2, JobTitle = "test job 2"}
-            };
-            
+            _jobRepository = jobRepository;
         }
+        public List<Job> GetJobs()
+        {
+            return _jobRepository.GetJobs();
+
+        }
+
     }
 }

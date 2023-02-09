@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,6 +31,7 @@ namespace APIUNO
         {
             services.AddControllers();
             services.AddBusinessRegistrations();
+            services.AddPersistenceRegistrations();
             //services.AddTransient<IJobService,JobService >();
         }
 
