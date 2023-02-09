@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BusinessDos.Entities;
+using BusinessDos.Interfaces.Services;
+using BusinessDos.Services;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace APIUNO.Controllers
@@ -7,9 +11,16 @@ namespace APIUNO.Controllers
     [Route(template:"[controller]")]
     public class JobsController: ControllerBase
     {
+        private readonly IJobService _jobService;
+        public JobsController(IJobService jobService) 
+        {
+            _jobService = jobService;
+        }
         public async Task<IActionResult> Get()
         {
-            return  Ok("Hola mundo steven");
+            //var jobs:List<Job> = _jobService.GetJobs();
+            var jobs = _jobService.GetJobs();
+            return  Ok(jobs);
         }
     }
 }

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIUNO", "APIUNO\APIUNO.csproj", "{5FAE8668-5276-443F-8B5D-96DACA7E069D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIUNO", "APIUNO\APIUNO.csproj", "{5FAE8668-5276-443F-8B5D-96DACA7E069D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessDos", "BusinessDos\BusinessDos.csproj", "{635886E9-9D00-4748-A871-6FD019BF7C7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5FAE8668-5276-443F-8B5D-96DACA7E069D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FAE8668-5276-443F-8B5D-96DACA7E069D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FAE8668-5276-443F-8B5D-96DACA7E069D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{635886E9-9D00-4748-A871-6FD019BF7C7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{635886E9-9D00-4748-A871-6FD019BF7C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{635886E9-9D00-4748-A871-6FD019BF7C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{635886E9-9D00-4748-A871-6FD019BF7C7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
