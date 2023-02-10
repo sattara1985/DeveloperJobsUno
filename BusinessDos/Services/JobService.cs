@@ -19,5 +19,10 @@ namespace BusinessDos.Services
 
         }
 
+        public Job CreateJob(Job job)
+        {
+            return _jobRepository.CreateJob(job);
+        }
+
     }
 }

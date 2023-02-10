@@ -8,5 +8,6 @@ namespace BusinessDos.Interfaces.Services
     public interface IJobService
     {
         List<Job> GetJobs();
+        Job CreateJob(Job job);
     }
 }

@@ -8,5 +8,6 @@ namespace BusinessDos.Interfaces.Repositories
     public interface IJobRepository
     {
         List<Job> GetJobs();
+        Job CreateJob(Job job);
     }
 }

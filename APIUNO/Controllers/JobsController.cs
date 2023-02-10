@@ -22,5 +22,11 @@ namespace APIUNO.Controllers
             var jobs = _jobService.GetJobs();
             return  Ok(jobs);
         }
+        public async Task<IActionResult> Post(Job job)
+        {
+            var newJob = _jobService.CreateJob(job);
+            
+            return Ok(job);
+        }
     }
 }
