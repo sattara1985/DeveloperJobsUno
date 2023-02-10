@@ -31,7 +31,7 @@ namespace APIUNO
         {
             services.AddControllers();
             services.AddBusinessRegistrations();
-            services.AddPersistenceRegistrations();
+            services.AddPersistenceRegistrations(Configuration);
             //services.AddTransient<IJobService,JobService >();
         }
 
